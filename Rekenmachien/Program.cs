@@ -65,13 +65,14 @@ namespace Rekenmachien
                             // tryparse zet isGetalValid op true wanneer de parse lukt
                             isGetal2Valid = double.TryParse(Console.ReadLine(), out getal2);
 
+                            // Werkt nog nie
                             // check voor minstens 1 decimaal getal
-                            if (!getal1.ToString().Contains('.') || !getal1.ToString().Contains(',') ||
-                                !getal2.ToString().Contains('.') || !getal2.ToString().Contains('.'))
-                            {
-                                // als er geen . of , gevonden word zijn er geen decimale getallen
-                                isGetal1Valid = isGetal2Valid = false;
-                            }
+                            //if (!getal1.ToString().Contains('.') || !getal1.ToString().Contains(',') ||
+                            //    !getal2.ToString().Contains('.') || !getal2.ToString().Contains('.'))
+                            //{
+                            //    // als er geen . of , gevonden word zijn er geen decimale getallen
+                            //    isGetal1Valid = isGetal2Valid = false;
+                            //}
                         } while (!isGetal1Valid || !isGetal2Valid);
                         break;
                 }
